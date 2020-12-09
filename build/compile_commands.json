@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/logranela/ED3/TrabalhoEDIII-3/build",
+  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/main.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/main.c",
+  "file": "/home/logranela/ED3/TrabalhoEDIII-3/main.c"
+},
+{
+  "directory": "/home/logranela/ED3/TrabalhoEDIII-3/build",
+  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/fornecido.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/fornecido.c",
+  "file": "/home/logranela/ED3/TrabalhoEDIII-3/fornecido.c"
+},
+{
+  "directory": "/home/logranela/ED3/TrabalhoEDIII-3/build",
+  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/grafos.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/grafos.c",
+  "file": "/home/logranela/ED3/TrabalhoEDIII-3/grafos.c"
+},
+{
+  "directory": "/home/logranela/ED3/TrabalhoEDIII-3/build",
+  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/queue.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/queue.c",
+  "file": "/home/logranela/ED3/TrabalhoEDIII-3/queue.c"
+},
+{
+  "directory": "/home/logranela/ED3/TrabalhoEDIII-3/build",
+  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/stack.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/stack.c",
+  "file": "/home/logranela/ED3/TrabalhoEDIII-3/stack.c"
+}
+]
