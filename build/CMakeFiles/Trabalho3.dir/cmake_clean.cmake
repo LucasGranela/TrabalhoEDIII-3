@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Trabalho3.dir/fornecido.c.o"
+  "CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o"
   "CMakeFiles/Trabalho3.dir/grafos.c.o"
   "CMakeFiles/Trabalho3.dir/main.c.o"
   "CMakeFiles/Trabalho3.dir/queue.c.o"
