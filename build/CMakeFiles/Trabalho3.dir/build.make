@@ -83,22 +83,9 @@ CMakeFiles/Trabalho3.dir/fornecido.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho3.dir/fornecido.c.s"
 	/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/logranela/ED3/TrabalhoEDIII-3/fornecido.c -o CMakeFiles/Trabalho3.dir/fornecido.c.s
 
-CMakeFiles/Trabalho3.dir/grafos.c.o: CMakeFiles/Trabalho3.dir/flags.make
-CMakeFiles/Trabalho3.dir/grafos.c.o: ../grafos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Trabalho3.dir/grafos.c.o"
-	/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho3.dir/grafos.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/grafos.c
-
-CMakeFiles/Trabalho3.dir/grafos.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho3.dir/grafos.c.i"
-	/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/logranela/ED3/TrabalhoEDIII-3/grafos.c > CMakeFiles/Trabalho3.dir/grafos.c.i
-
-CMakeFiles/Trabalho3.dir/grafos.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho3.dir/grafos.c.s"
-	/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/logranela/ED3/TrabalhoEDIII-3/grafos.c -o CMakeFiles/Trabalho3.dir/grafos.c.s
-
 CMakeFiles/Trabalho3.dir/queue.c.o: CMakeFiles/Trabalho3.dir/flags.make
 CMakeFiles/Trabalho3.dir/queue.c.o: ../queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Trabalho3.dir/queue.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Trabalho3.dir/queue.c.o"
 	/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho3.dir/queue.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/queue.c
 
 CMakeFiles/Trabalho3.dir/queue.c.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/Trabalho3.dir/queue.c.s: cmake_force
 
 CMakeFiles/Trabalho3.dir/stack.c.o: CMakeFiles/Trabalho3.dir/flags.make
 CMakeFiles/Trabalho3.dir/stack.c.o: ../stack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Trabalho3.dir/stack.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Trabalho3.dir/stack.c.o"
 	/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho3.dir/stack.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/stack.c
 
 CMakeFiles/Trabalho3.dir/stack.c.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/Trabalho3.dir/stack.c.s: cmake_force
 
 CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o: CMakeFiles/Trabalho3.dir/flags.make
 CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o: ../grafoListaAdjacencia.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o"
 	/bin/c99-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.c
 
 CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.i: cmake_force
@@ -139,7 +126,6 @@ CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.s: cmake_force
 Trabalho3_OBJECTS = \
 "CMakeFiles/Trabalho3.dir/main.c.o" \
 "CMakeFiles/Trabalho3.dir/fornecido.c.o" \
-"CMakeFiles/Trabalho3.dir/grafos.c.o" \
 "CMakeFiles/Trabalho3.dir/queue.c.o" \
 "CMakeFiles/Trabalho3.dir/stack.c.o" \
 "CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o"
@@ -149,13 +135,12 @@ Trabalho3_EXTERNAL_OBJECTS =
 
 Trabalho3: CMakeFiles/Trabalho3.dir/main.c.o
 Trabalho3: CMakeFiles/Trabalho3.dir/fornecido.c.o
-Trabalho3: CMakeFiles/Trabalho3.dir/grafos.c.o
 Trabalho3: CMakeFiles/Trabalho3.dir/queue.c.o
 Trabalho3: CMakeFiles/Trabalho3.dir/stack.c.o
 Trabalho3: CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o
 Trabalho3: CMakeFiles/Trabalho3.dir/build.make
 Trabalho3: CMakeFiles/Trabalho3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Trabalho3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Trabalho3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Trabalho3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

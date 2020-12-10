@@ -574,33 +574,6 @@ grafoListaAdjacencia.c.s:
 	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.s
 .PHONY : grafoListaAdjacencia.c.s
 
-grafos.o: grafos.c.o
-
-.PHONY : grafos.o
-
-# target to build an object file
-grafos.c.o:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.o
-.PHONY : grafos.c.o
-
-grafos.i: grafos.c.i
-
-.PHONY : grafos.i
-
-# target to preprocess a source file
-grafos.c.i:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.i
-.PHONY : grafos.c.i
-
-grafos.s: grafos.c.s
-
-.PHONY : grafos.s
-
-# target to generate assembly for a file
-grafos.c.s:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.s
-.PHONY : grafos.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -728,9 +701,6 @@ help:
 	@echo "... grafoListaAdjacencia.o"
 	@echo "... grafoListaAdjacencia.i"
 	@echo "... grafoListaAdjacencia.s"
-	@echo "... grafos.o"
-	@echo "... grafos.i"
-	@echo "... grafos.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

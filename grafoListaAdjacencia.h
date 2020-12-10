@@ -2,29 +2,35 @@
 #define GRAFOLISTAADJACENCIA_H
 
     //Lista que vai conter todas as pessoas que sao seguidas
-typedef struct vertices{
-    struct seguidos* ant;
+ struct vertices{
+    struct vertices* ant;
     char nomeSeguidos[40];
-    struct seguidos*  prox;
-} seguidos;
+    struct vertices*  prox;
+};
 
     //Lista que vai conter todos as pessoas que seguem
 struct No{
-    struct elem *ant;
+    struct No *ant;
     char nomeSegue[40];
-    struct vertices **listaAdjacencia;
-    struct elem *pos;
+    struct vertices** listaAdjacencia;
+    struct No *prox;
 };
 
-typedef struct no elem;
-
-typedef struct no* segue;
-
-
-
-void criaGrafo(segue* lista);
+typedef struct No elem;
+typedef struct No* segue;
+typedef struct vertices elemSeguidos;
+typedef struct vertices* seguidos;
 
 
 
+segue* criaGrafo();
+seguidos* criaSeguidores();
+void insereSegueGrafo(segue* lista, char nomePessoa[40]);
+void insereSeguidores(segue* lista, char nomePessoaSeguida[40], char nomePessoaSegue[40]);
+void imprimeGrafoListaAdjacencia(segue* lista);
+
+
+void insereSeguidoresLista(seguidos* lista, char nomePessoaSeguida[40]);
+void imprimeAdjacencia(seguidos* lista);
 
 #endif

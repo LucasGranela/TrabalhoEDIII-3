@@ -6,9 +6,6 @@ CMakeFiles/Trabalho3.dir/fornecido.c.o: ../fornecido.c
 CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o: ../grafoListaAdjacencia.c
 CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o: ../grafoListaAdjacencia.h
 
-CMakeFiles/Trabalho3.dir/grafos.c.o: ../grafos.c
-CMakeFiles/Trabalho3.dir/grafos.c.o: ../grafos.h
-
 CMakeFiles/Trabalho3.dir/main.c.o: ../grafoListaAdjacencia.h
 CMakeFiles/Trabalho3.dir/main.c.o: ../main.c
 

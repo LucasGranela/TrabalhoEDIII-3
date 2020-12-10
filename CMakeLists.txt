@@ -4,7 +4,7 @@ project(Trabalho3 VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(Trabalho3 main.c fornecido.c grafos.c queue.c stack.c grafoListaAdjacencia.c)
+add_executable(Trabalho3 main.c fornecido.c queue.c stack.c grafoListaAdjacencia.c )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
