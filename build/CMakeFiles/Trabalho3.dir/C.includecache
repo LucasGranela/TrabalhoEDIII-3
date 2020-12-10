@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.c
+grafoListaAdjacencia.h
 /home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.h
-
-/home/logranela/ED3/TrabalhoEDIII-3/main.c
 stdio.h
 -
 stdlib.h
 -
-grafoListaAdjacencia.h
-/home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.h
 string.h
 -
+
+/home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.h
 

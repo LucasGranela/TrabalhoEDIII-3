@@ -7,11 +7,18 @@
 int main(){
 
     segue* lista = criaGrafo();
-    insereSegueGrafo(lista, "vanessa\0");
-    insereSeguidores(lista, "alexandre\0", "vanessa\0");
-    insereSegueGrafo(lista, "Paulo\0");
-    insereSeguidores(lista, "poldaslda\0", "Paulo\0");
-    insereSeguidores(lista, "maraca\0", "Paulo\0");
+    
+    //insereSegueGrafo(lista, "vanessa");
+    insereGrafo(lista, "vanessa\0", "alberto\0");
+    
+    //insereSegueGrafo(lista, "vanessa");
+    insereGrafo(lista, "vanessa", "\0");
+    insereGrafo(lista, "Alexandre", "\0");
+    insereGrafo(lista, "Alexandre", "Paulo");
+    insereGrafo(lista, "vanessa", "Macarena");
+
     imprimeGrafoListaAdjacencia(lista);
+
+    limpaGrafo(lista);
     return 0;
 }
