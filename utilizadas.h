@@ -22,4 +22,7 @@
     int retornaRRNcomId(FILE* arquivo,int valor);
     int verificaConsistenciaComAPalavraProcessamento(FILE* arquivo);
 
+    //funcoes novas para o Trabalho 3
+    int retornaQuantidade(FILE* arquivoPessoa);
+
 #endif

@@ -547,33 +547,6 @@ fornecido.c.s:
 	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/fornecido.c.s
 .PHONY : fornecido.c.s
 
-grafoListaAdjacencia.o: grafoListaAdjacencia.c.o
-
-.PHONY : grafoListaAdjacencia.o
-
-# target to build an object file
-grafoListaAdjacencia.c.o:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o
-.PHONY : grafoListaAdjacencia.c.o
-
-grafoListaAdjacencia.i: grafoListaAdjacencia.c.i
-
-.PHONY : grafoListaAdjacencia.i
-
-# target to preprocess a source file
-grafoListaAdjacencia.c.i:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.i
-.PHONY : grafoListaAdjacencia.c.i
-
-grafoListaAdjacencia.s: grafoListaAdjacencia.c.s
-
-.PHONY : grafoListaAdjacencia.s
-
-# target to generate assembly for a file
-grafoListaAdjacencia.c.s:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.s
-.PHONY : grafoListaAdjacencia.c.s
-
 grafos.o: grafos.c.o
 
 .PHONY : grafos.o
@@ -752,9 +725,6 @@ help:
 	@echo "... fornecido.o"
 	@echo "... fornecido.i"
 	@echo "... fornecido.s"
-	@echo "... grafoListaAdjacencia.o"
-	@echo "... grafoListaAdjacencia.i"
-	@echo "... grafoListaAdjacencia.s"
 	@echo "... grafos.o"
 	@echo "... grafos.i"
 	@echo "... grafos.s"

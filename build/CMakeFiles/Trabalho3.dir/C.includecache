@@ -6,23 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/logranela/ED3/TrabalhoEDIII-3/grafos.c
+grafos.h
 /home/logranela/ED3/TrabalhoEDIII-3/grafos.h
-
-/home/logranela/ED3/TrabalhoEDIII-3/main.c
 stdio.h
 -
 stdlib.h
 -
-grafos.h
-/home/logranela/ED3/TrabalhoEDIII-3/grafos.h
-utilizadas.h
-/home/logranela/ED3/TrabalhoEDIII-3/utilizadas.h
 string.h
 -
 
-/home/logranela/ED3/TrabalhoEDIII-3/utilizadas.h
-stdio.h
--
-stdlib.h
--
+/home/logranela/ED3/TrabalhoEDIII-3/grafos.h
 

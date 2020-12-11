@@ -1,6 +1,7 @@
 #include "grafos.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 Lista* criaListas() {
@@ -10,9 +11,25 @@ Lista* criaListas() {
     return li;
 }
 
+ListaNomes* criaListaNomes(int quantV){
+    ListaNomes* nome = (ListaNomes*)malloc(quantV * sizeof(ListaNomes));
+
+    return nome;
+}
+
+void insereListaNomes(ListaNomes* li, int num, char nomeP[40], int id){
+    ListaNomes no;
+    no = (ListaNomes)malloc(sizeof(struct nomes));
+
+    strcpy(no->nome, nomeP);
+    no->idNome = id;
+
+    li[num] = no;
+}
+
 grafo cria_Grafo(int quantV) {
     grafo graph = (grafo)malloc(sizeof(struct grafos));
-
+    
     graph->quantVertices = quantV;
     graph->quantArestas = 0;
     graph->listaAdjacentes = malloc(quantV * sizeof(Lista));

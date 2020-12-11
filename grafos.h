@@ -6,11 +6,12 @@ struct arestas{
     struct arestas*  prox;
 };
 
-struct nomes {
+struct nomes{
     char nome[40];
     int idNome;
 };
 
+typedef struct nomes* ListaNomes;
 typedef struct arestas* Lista;
 typedef struct arestas Elem;
 
@@ -24,6 +25,8 @@ typedef struct grafos* grafo;
 
 Lista* criaListas();
 grafo cria_Grafo(int quantV);
+ListaNomes* criaListaNomes(int quantV);
+void insereListaNomes(ListaNomes* li, int num, char nome[40], int id);
 void insere_Aresta_Grafo(grafo* graph, int verticeInic, int verticeFim);
 void imprimeGrafo(grafo* graph);
 void liberaGrafo(grafo* graph);

@@ -207,8 +207,17 @@ int abreArquivo(FILE** arq, char* nome, char* modo, int tipo){
         return 0;
     }
 
-    if((strcmp(modo, "wb\0") != 0) && tipo != 4 && !verificaConsistencia(arquivo))
+    if((strcmp(modo, "wb\0") != 0) && tipo != 4){
+        char statusArquivo;
+        fseek(arquivo, 0, SEEK_SET);
+        fread(&statusArquivo, sizeof(char), 1, arquivo);
+
+        if(statusArquivo == '0'){
+        printf("Falha na execução da funcionalidade.\n");
+        fclose(arquivo);
         return 0;
+        }
+    }
 
     *arq = arquivo;
     return 1;
@@ -269,3 +278,12 @@ char* interpretadorDeGrau(char grauAmizade[4]){
     return "-";
 }
 
+int retornaQuantidade(FILE* arquivoPessoa){
+    fseek(arquivoPessoa, 1, SEEK_SET);
+
+    int quant;
+
+    fread(&quant, 4, 1, arquivoPessoa);
+
+    return quant;
+}
