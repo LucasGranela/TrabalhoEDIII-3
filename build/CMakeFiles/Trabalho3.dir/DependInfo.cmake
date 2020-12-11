@@ -6,9 +6,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/logranela/ED3/TrabalhoEDIII-3/fornecido.c" "/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles/Trabalho3.dir/fornecido.c.o"
   "/home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.c" "/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o"
+  "/home/logranela/ED3/TrabalhoEDIII-3/grafos.c" "/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles/Trabalho3.dir/grafos.c.o"
   "/home/logranela/ED3/TrabalhoEDIII-3/main.c" "/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles/Trabalho3.dir/main.c.o"
   "/home/logranela/ED3/TrabalhoEDIII-3/queue.c" "/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles/Trabalho3.dir/queue.c.o"
   "/home/logranela/ED3/TrabalhoEDIII-3/stack.c" "/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles/Trabalho3.dir/stack.c.o"
+  "/home/logranela/ED3/TrabalhoEDIII-3/utilizadas.c" "/home/logranela/ED3/TrabalhoEDIII-3/build/CMakeFiles/Trabalho3.dir/utilizadas.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

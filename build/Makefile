@@ -574,6 +574,33 @@ grafoListaAdjacencia.c.s:
 	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.s
 .PHONY : grafoListaAdjacencia.c.s
 
+grafos.o: grafos.c.o
+
+.PHONY : grafos.o
+
+# target to build an object file
+grafos.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.o
+.PHONY : grafos.c.o
+
+grafos.i: grafos.c.i
+
+.PHONY : grafos.i
+
+# target to preprocess a source file
+grafos.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.i
+.PHONY : grafos.c.i
+
+grafos.s: grafos.c.s
+
+.PHONY : grafos.s
+
+# target to generate assembly for a file
+grafos.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.s
+.PHONY : grafos.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -655,6 +682,33 @@ stack.c.s:
 	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/stack.c.s
 .PHONY : stack.c.s
 
+utilizadas.o: utilizadas.c.o
+
+.PHONY : utilizadas.o
+
+# target to build an object file
+utilizadas.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/utilizadas.c.o
+.PHONY : utilizadas.c.o
+
+utilizadas.i: utilizadas.c.i
+
+.PHONY : utilizadas.i
+
+# target to preprocess a source file
+utilizadas.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/utilizadas.c.i
+.PHONY : utilizadas.c.i
+
+utilizadas.s: utilizadas.c.s
+
+.PHONY : utilizadas.s
+
+# target to generate assembly for a file
+utilizadas.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/utilizadas.c.s
+.PHONY : utilizadas.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -701,6 +755,9 @@ help:
 	@echo "... grafoListaAdjacencia.o"
 	@echo "... grafoListaAdjacencia.i"
 	@echo "... grafoListaAdjacencia.s"
+	@echo "... grafos.o"
+	@echo "... grafos.i"
+	@echo "... grafos.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -710,6 +767,9 @@ help:
 	@echo "... stack.o"
 	@echo "... stack.i"
 	@echo "... stack.s"
+	@echo "... utilizadas.o"
+	@echo "... utilizadas.i"
+	@echo "... utilizadas.s"
 .PHONY : help
 
 
