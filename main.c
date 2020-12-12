@@ -29,7 +29,7 @@ int main(){
         int quantPessoas = retornaQuantidade(arqPessoa);
 
         segue *grafo = criaGrafo();
-        
+
         ListaNomes* nomes = criaListaNomes(quantPessoas);
 
         geraGrafo(arqPessoa, arqSegue, grafo, nomes);
@@ -43,6 +43,36 @@ int main(){
         fclose(arqIndexa);
     }
 
-    
+    else if(caso == 10){
+        FILE *arqPessoa, *arqIndexa, *arqSegue;
+
+        if(!abreArquivo(&arqPessoa, nomeArquivoPessoa, "rb\0", 1))
+            return 0;
+        if(!abreArquivo(&arqIndexa, nomeArquivoIndexaPessoa, "rb\0", 1))
+            return 0;
+        if(!abreArquivo(&arqSegue, nomeArquivoSegueOrdenado, "rb\0", 1))
+            return 0;
+
+        int quantPessoas = retornaQuantidade(arqPessoa);
+
+        segue *grafo = criaGrafo();
+
+        ListaNomes* nomes = criaListaNomes(quantPessoas);
+
+        geraGrafo(arqPessoa, arqSegue, grafo, nomes);
+
+        segue *grafoT = criaGrafo();
+        transpoeGrafo(grafo, grafoT);
+        imprimeGrafoListaAdjacencia(grafoT);
+
+        limpaGrafo(grafo);
+        limpaGrafo(grafoT);
+
+        fclose(arqSegue);
+        fclose(arqPessoa);
+        fclose(arqIndexa);
+    }
+
+
     return 0;
 }

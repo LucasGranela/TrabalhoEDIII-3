@@ -29,13 +29,13 @@ seguidos* criaSeguidores() {
 void insereGrafo(segue* lista, char nomePessoaSegue[40], char nomePessoaSeguida[40]){
     if(lista == NULL) //sai se tiver um erro na lista
         return;
-    
+
     if(strcmp(nomePessoaSegue, "\0") == 0) //retorna tambem se nao tiver vertice na entrada
         return;
 
     elem* no;
     no = (elem*) malloc(sizeof(elem));
-    seguidos *seguidores = criaSeguidores(); 
+    seguidos *seguidores = criaSeguidores();
 
     strcpy(no->nomeSegue, nomePessoaSegue);
     no->listaAdjacencia = seguidores;
@@ -51,7 +51,7 @@ void insereGrafo(segue* lista, char nomePessoaSegue[40], char nomePessoaSeguida[
         elem *ante;
         elem *atual;
         atual = *lista;
-        
+
         while (atual != NULL && strcmp(atual->nomeSegue, nomePessoaSegue) < 0 ){
             ante = atual;
             atual = atual->prox;
@@ -72,25 +72,25 @@ void insereGrafo(segue* lista, char nomePessoaSegue[40], char nomePessoaSeguida[
                 no->ant = ante;
                 ante->prox = no;
                 if (atual != NULL)
-                    atual->ant = no;    
-            } 
+                    atual->ant = no;
+            }
         }
     }
-    
+
 }
 
 //aqui ele pega essa lista que segue ja existente e cria uma lista de seguidos
 void insereSeguidoresLista(seguidos* lista, char nomePessoaSeguida[40]){
-    
+
     if(strcmp(nomePessoaSeguida, "\0") == 0)
         return;
 
-    elemSeguidos* no; 
+    elemSeguidos* no;
     no = (elemSeguidos*) malloc(sizeof(elemSeguidos));
 
     strcpy(no->nomeSeguidos, nomePessoaSeguida);
     (no)->prox = NULL;
-    
+
     if((*lista) == NULL){
         (no)->ant = NULL;
         *lista = no;
@@ -113,7 +113,7 @@ void insereSeguidoresLista(seguidos* lista, char nomePessoaSeguida[40]){
             no->ant = ante;
             ante->prox = no;
             if (atual != NULL)
-                atual->ant = no;     
+                atual->ant = no;
         }
     }
 }
@@ -153,7 +153,7 @@ void buscaEmProfundidade(segue* li_segue, ListaNomes* li_Nomes, char nomeVertice
         while(getStatusPeloNome(li, no_seguidos->nomeSeguidos) != 0 || no_seguidos->prox != NULL){
             no_seguidos = no_seguidos->prox;
         }
-        
+
         elem* aux;
         aux = *li_segue;
 
@@ -174,7 +174,7 @@ void buscaEmProfundidade(segue* li_segue, ListaNomes* li_Nomes, char nomeVertice
             if(getStatusPeloNome(li, nomeASerBuscado) == 1){
                 while(strcmp(aux->nomeSegue, nomeASerBuscado) == 0)
                     aux = aux->prox;
-                
+
                 mudaStatusPeloNome(li, aux->nomeSegue, 2);
                 no_segue = aux;
             }
@@ -233,9 +233,33 @@ void imprimeGrafoListaAdjacencia(segue* lista){
                 printf(", %s\n", no_seguido->nomeSeguidos);
             else
                 printf(", %s", no_seguido->nomeSeguidos);
-        
+
             no_seguido = no_seguido->prox;
         }
         no = no->prox;
     }
+}
+
+void transpoeGrafo(segue* grafo,segue* grafoT){
+    elem* noG = *grafo;
+
+    if (grafo == NULL)
+        return;
+
+    while (noG != NULL) {
+        insereGrafo(grafoT, noG->nomeSegue, "\0");
+        noG = noG->prox;
+    }
+
+    noG = *grafo;
+    while (noG != NULL) {
+        elemSeguidos* noG_seguido = *(noG->listaAdjacencia);
+        while(noG_seguido != NULL) {
+            insereGrafo(grafoT, noG_seguido->nomeSeguidos , noG->nomeSegue);
+            noG_seguido = noG_seguido->prox;
+        }
+        noG = noG->prox;
+    }
+
+
 }

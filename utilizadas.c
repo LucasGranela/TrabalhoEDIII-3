@@ -288,7 +288,7 @@ int retornaQuantidade(FILE* arquivoPessoa){
     return quant;
 }
 
-int geraGrafo(FILE* arqPessoa, FILE* arqSegue, segue* grafo, ListaNomes* nomes){
+void geraGrafo(FILE* arqPessoa, FILE* arqSegue, segue* grafo, ListaNomes* nomes){
     char status;
     int numPessoa = 0;
     char nomePessoa[40];
@@ -327,5 +327,5 @@ int geraGrafo(FILE* arqPessoa, FILE* arqSegue, segue* grafo, ListaNomes* nomes){
         getNome(nomes, idSeguido, nomeSeguido);
         insereGrafo(grafo, nomeSegue, nomeSeguido);
         fseek(arqSegue, 23, SEEK_CUR);
-    }    
+    }
 }
