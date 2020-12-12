@@ -287,3 +287,45 @@ int retornaQuantidade(FILE* arquivoPessoa){
 
     return quant;
 }
+
+int geraGrafo(FILE* arqPessoa, FILE* arqSegue, segue* grafo, ListaNomes* nomes){
+    char status;
+    int numPessoa = 0;
+    char nomePessoa[40];
+    int idPessoa;
+
+    fseek(arqPessoa, 64, SEEK_SET);
+    while(fread(&status, 1, 1, arqPessoa) == 1){
+        if(status == '0'){
+            fseek(arqPessoa, 63, SEEK_CUR); // pula para o proximo registro
+            continue;
+        }
+
+        fread(&idPessoa, 4,1,arqPessoa);
+        fread(nomePessoa, 1, 40, arqPessoa);
+        insereListaNomes(nomes, numPessoa, nomePessoa, idPessoa);
+        insereGrafo(grafo, nomePessoa, "\0");
+        fseek(arqPessoa, 19, SEEK_CUR);
+        numPessoa++;
+    }
+
+    int idSegue;
+    int idSeguido;
+    char nomeSegue[40];
+    char nomeSeguido[40];
+
+    fseek(arqSegue, 32, SEEK_SET);
+
+    while(fread(&status, 1, 1, arqSegue) == 1){
+        if(status == '0'){
+            fseek(arqPessoa, 31, SEEK_CUR); // pula para o proximo registro
+            continue;
+        }
+        fread(&idSegue, 4,1,arqSegue);
+        fread(&idSeguido, 4,1,arqSegue);
+        getNome(nomes, idSegue, nomeSegue);
+        getNome(nomes, idSeguido, nomeSeguido);
+        insereGrafo(grafo, nomeSegue, nomeSeguido);
+        fseek(arqSegue, 23, SEEK_CUR);
+    }    
+}

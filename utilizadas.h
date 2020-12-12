@@ -3,6 +3,8 @@
 
     #include <stdio.h>
     #include <stdlib.h>
+    #include "listaNomes.h"
+    #include "grafoListaAdjacencia.h"
 
     //Funcoes do Trabalho 1
     int imprimeRegistroNaTela(FILE* arquivo); //recebe um arquivo e imprime no modo desejado pelos casos 2 e 3
@@ -24,5 +26,6 @@
 
     //funcoes novas para o Trabalho 3
     int retornaQuantidade(FILE* arquivoPessoa);
+    int geraGrafo(FILE* arqPessoa, FILE* arqSegue, segue* grafo, ListaNomes* nomes);
 
 #endif
