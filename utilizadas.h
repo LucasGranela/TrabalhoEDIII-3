@@ -26,6 +26,6 @@
 
     //funcoes novas para o Trabalho 3
     int retornaQuantidade(FILE* arquivoPessoa);
-    int geraGrafo(FILE* arqPessoa, FILE* arqSegue, segue* grafo, ListaNomes* nomes);
+    void geraGrafo(FILE* arqPessoa, FILE* arqSegue, segue* grafo, ListaNomes* nomes);
 
 #endif

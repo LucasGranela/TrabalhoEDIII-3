@@ -11,6 +11,7 @@ CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o: ../stack.h
 CMakeFiles/Trabalho3.dir/listaNomes.c.o: ../listaNomes.c
 CMakeFiles/Trabalho3.dir/listaNomes.c.o: ../listaNomes.h
 
+CMakeFiles/Trabalho3.dir/main.c.o: ../fornecido.h
 CMakeFiles/Trabalho3.dir/main.c.o: ../grafoListaAdjacencia.h
 CMakeFiles/Trabalho3.dir/main.c.o: ../listaNomes.h
 CMakeFiles/Trabalho3.dir/main.c.o: ../main.c
