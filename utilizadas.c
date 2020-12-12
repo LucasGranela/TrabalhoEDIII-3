@@ -327,5 +327,5 @@ void geraGrafo(FILE* arqPessoa, FILE* arqSegue, segue* grafo, ListaNomes* nomes)
         getNome(nomes, idSeguido, nomeSeguido);
         insereGrafo(grafo, nomeSegue, nomeSeguido);
         fseek(arqSegue, 23, SEEK_CUR);
-    }
+    }    
 }

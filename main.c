@@ -5,6 +5,7 @@
 #include "grafoListaAdjacencia.h"
 #include "utilizadas.h"
 #include "listaNomes.h"
+#include "fornecido.h"
 #include <string.h>
 
 int main(){
@@ -29,7 +30,7 @@ int main(){
         int quantPessoas = retornaQuantidade(arqPessoa);
 
         segue *grafo = criaGrafo();
-
+        
         ListaNomes* nomes = criaListaNomes(quantPessoas);
 
         geraGrafo(arqPessoa, arqSegue, grafo, nomes);
@@ -41,9 +42,8 @@ int main(){
         fclose(arqSegue);
         fclose(arqPessoa);
         fclose(arqIndexa);
-    }
 
-    else if(caso == 10){
+    } else if(caso == 10){
         FILE *arqPessoa, *arqIndexa, *arqSegue;
 
         if(!abreArquivo(&arqPessoa, nomeArquivoPessoa, "rb\0", 1))
@@ -71,8 +71,38 @@ int main(){
         fclose(arqSegue);
         fclose(arqPessoa);
         fclose(arqIndexa);
+    } else if (caso == 12){
+
+        FILE *arqPessoa, *arqIndexa, *arqSegue;
+        char nomeVerticeInic[40];
+
+        scan_quote_string(nomeVerticeInic);
+
+        if(!abreArquivo(&arqPessoa, nomeArquivoPessoa, "rb\0", 1))
+            return 0;
+        if(!abreArquivo(&arqIndexa, nomeArquivoIndexaPessoa, "rb\0", 1))
+            return 0;
+        if(!abreArquivo(&arqSegue, nomeArquivoSegueOrdenado, "rb\0", 1))
+            return 0;
+
+        int quantPessoas = retornaQuantidade(arqPessoa);
+
+        segue *grafo = criaGrafo();
+        
+        ListaNomes* nomes = criaListaNomes(quantPessoas);
+
+        geraGrafo(arqPessoa, arqSegue, grafo, nomes);
+
+        buscaEmProfundidade(grafo, nomes, nomeVerticeInic);
+
+        limpaGrafo(grafo);
+
+        fclose(arqSegue);
+        fclose(arqPessoa);
+        fclose(arqIndexa);
     }
 
-
+    
+    
     return 0;
 }

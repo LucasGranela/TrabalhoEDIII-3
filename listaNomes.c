@@ -35,7 +35,7 @@ void mudaStatusPeloNome(ListaNomes* li, char nome[40], int status){
     int i = 0;
 
     //isso aqui pode dar erro se nao existir o nome na lista
-    while (strcmp(li[i]->nome, nome) == 0) {
+    while (strcmp(li[i]->nome, nome) != 0) {
         i++;
     }
 
@@ -46,7 +46,7 @@ int getStatusPeloNome(ListaNomes* li, char nome[40]){
     int i = 0;
 
     //isso aqui pode dar erro se nao existir o nome na lista
-    while (strcmp(li[i]->nome, nome) == 0) {
+    while (strcmp(li[i]->nome, nome) != 0) {
         i++;
     }
 
