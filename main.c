@@ -71,6 +71,25 @@ int main(){
         fclose(arqSegue);
         fclose(arqPessoa);
         fclose(arqIndexa);
+
+    } else if (caso == 11) {
+        
+        FILE *arqPessoa, *arqIndexa, *arqSegue;
+        char nomeVerticeFim[40];
+
+        scan_quote_string(nomeVerticeFim);
+
+        if(!abreArquivo(&arqPessoa, nomeArquivoPessoa, "rb\0", 1))
+            return 0;
+        if(!abreArquivo(&arqIndexa, nomeArquivoIndexaPessoa, "rb\0", 1))
+            return 0;
+        if(!abreArquivo(&arqSegue, nomeArquivoSegueOrdenado, "rb\0", 1))
+            return 0;
+
+        fclose(arqSegue);
+        fclose(arqPessoa);
+        fclose(arqIndexa);
+        
     } else if (caso == 12){
 
         FILE *arqPessoa, *arqIndexa, *arqSegue;

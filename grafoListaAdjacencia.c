@@ -148,6 +148,8 @@ void buscaEmProfundidade(segue* li_segue, ListaNomes* li_Nomes, char nomeVertice
     seguidos* li_seguidos;
     elemSeguidos* no_seguidos;
 
+    int quantSaltos = 0;
+
     while(S_Size(p) != 0){
         if(S_Size(p) != 1 && strcmp(no_segue->nomeSegue, nomeVerticeInic) == 0)
             break;
@@ -170,6 +172,7 @@ void buscaEmProfundidade(segue* li_segue, ListaNomes* li_Nomes, char nomeVertice
 
             mudaStatusPeloNome(li, no_seguidos->nomeSeguidos, 1);
             S_Push(aux->nomeSegue, p);
+            quantSaltos++;
             no_segue = aux;
             continue;
         }
@@ -193,13 +196,16 @@ void buscaEmProfundidade(segue* li_segue, ListaNomes* li_Nomes, char nomeVertice
 
                 if(no_seguidos == NULL){
                     mudaStatusPeloNome(li, aux->nomeSegue, 2);
+                    quantSaltos--;
                     continue;
                 }
                 else{
                     while(strcmp(aux->nomeSegue, no_seguidos->nomeSeguidos) != 0)
                         aux = aux->prox;
 
+                    S_Push(aux->nomeSegue, p);
                     no_segue = aux;
+                    quantSaltos++;
                     break;    
                 }
             }
@@ -209,7 +215,7 @@ void buscaEmProfundidade(segue* li_segue, ListaNomes* li_Nomes, char nomeVertice
     if(S_Size(p) == 0)
         printf("A FOFOCA NAO RETORNOU\n");
     else
-        printf("%ld\n", (S_Size(p) - 1));
+        printf("%d\n", quantSaltos);
     
 }
 
