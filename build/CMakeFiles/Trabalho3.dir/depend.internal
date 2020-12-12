@@ -3,11 +3,15 @@
 
 CMakeFiles/Trabalho3.dir/fornecido.c.o
  /home/logranela/ED3/TrabalhoEDIII-3/fornecido.c
-CMakeFiles/Trabalho3.dir/grafos.c.o
- /home/logranela/ED3/TrabalhoEDIII-3/grafos.c
- /home/logranela/ED3/TrabalhoEDIII-3/grafos.h
+CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o
+ /home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.c
+ /home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.h
+CMakeFiles/Trabalho3.dir/listaNomes.c.o
+ /home/logranela/ED3/TrabalhoEDIII-3/listaNomes.c
+ /home/logranela/ED3/TrabalhoEDIII-3/listaNomes.h
 CMakeFiles/Trabalho3.dir/main.c.o
- /home/logranela/ED3/TrabalhoEDIII-3/grafos.h
+ /home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.h
+ /home/logranela/ED3/TrabalhoEDIII-3/listaNomes.h
  /home/logranela/ED3/TrabalhoEDIII-3/main.c
  /home/logranela/ED3/TrabalhoEDIII-3/utilizadas.h
 CMakeFiles/Trabalho3.dir/queue.c.o

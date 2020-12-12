@@ -547,32 +547,59 @@ fornecido.c.s:
 	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/fornecido.c.s
 .PHONY : fornecido.c.s
 
-grafos.o: grafos.c.o
+grafoListaAdjacencia.o: grafoListaAdjacencia.c.o
 
-.PHONY : grafos.o
+.PHONY : grafoListaAdjacencia.o
 
 # target to build an object file
-grafos.c.o:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.o
-.PHONY : grafos.c.o
+grafoListaAdjacencia.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o
+.PHONY : grafoListaAdjacencia.c.o
 
-grafos.i: grafos.c.i
+grafoListaAdjacencia.i: grafoListaAdjacencia.c.i
 
-.PHONY : grafos.i
+.PHONY : grafoListaAdjacencia.i
 
 # target to preprocess a source file
-grafos.c.i:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.i
-.PHONY : grafos.c.i
+grafoListaAdjacencia.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.i
+.PHONY : grafoListaAdjacencia.c.i
 
-grafos.s: grafos.c.s
+grafoListaAdjacencia.s: grafoListaAdjacencia.c.s
 
-.PHONY : grafos.s
+.PHONY : grafoListaAdjacencia.s
 
 # target to generate assembly for a file
-grafos.c.s:
-	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafos.c.s
-.PHONY : grafos.c.s
+grafoListaAdjacencia.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.s
+.PHONY : grafoListaAdjacencia.c.s
+
+listaNomes.o: listaNomes.c.o
+
+.PHONY : listaNomes.o
+
+# target to build an object file
+listaNomes.c.o:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/listaNomes.c.o
+.PHONY : listaNomes.c.o
+
+listaNomes.i: listaNomes.c.i
+
+.PHONY : listaNomes.i
+
+# target to preprocess a source file
+listaNomes.c.i:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/listaNomes.c.i
+.PHONY : listaNomes.c.i
+
+listaNomes.s: listaNomes.c.s
+
+.PHONY : listaNomes.s
+
+# target to generate assembly for a file
+listaNomes.c.s:
+	$(MAKE) -f CMakeFiles/Trabalho3.dir/build.make CMakeFiles/Trabalho3.dir/listaNomes.c.s
+.PHONY : listaNomes.c.s
 
 main.o: main.c.o
 
@@ -725,9 +752,12 @@ help:
 	@echo "... fornecido.o"
 	@echo "... fornecido.i"
 	@echo "... fornecido.s"
-	@echo "... grafos.o"
-	@echo "... grafos.i"
-	@echo "... grafos.s"
+	@echo "... grafoListaAdjacencia.o"
+	@echo "... grafoListaAdjacencia.i"
+	@echo "... grafoListaAdjacencia.s"
+	@echo "... listaNomes.o"
+	@echo "... listaNomes.i"
+	@echo "... listaNomes.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

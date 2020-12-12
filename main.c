@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "grafos.h"
+//#include "grafos.h"
+#include "grafoListaAdjacencia.h"
 #include "utilizadas.h"
+#include "listaNomes.h"
 #include <string.h>
 
 int main(){
@@ -26,18 +28,16 @@ int main(){
 
         int quantPessoas = retornaQuantidade(arqPessoa);
 
-        grafo grafo_Twitter = cria_Grafo(quantPessoas);
-
-        fseek(arqPessoa, 64, SEEK_SET);
+        segue *grafo = criaGrafo();
+        
+        ListaNomes* nomes = criaListaNomes(quantPessoas);
 
         char status;
         int numPessoa = 0;
         char nomePessoa[40];
         int idPessoa;
 
-        ListaNomes* listNom = criaListaNomes(quantPessoas);
-
-
+        fseek(arqPessoa, 64, SEEK_SET);
         while(fread(&status, 1, 1, arqPessoa) == 1){
             if(status == '0'){
                 fseek(arqPessoa, 63, SEEK_CUR); // pula para o proximo registro
@@ -46,16 +46,34 @@ int main(){
 
             fread(&idPessoa, 4,1,arqPessoa);
             fread(nomePessoa, 1, 40, arqPessoa);
-            insere_Aresta_Grafo(&grafo_Twitter, numPessoa, numPessoa); //o primeiro numero de toda lista é a pessoa que segue, as outras sao as pessoas seguidas
-            insereListaNomes(listNom, numPessoa, nomePessoa, idPessoa);
+            insereListaNomes(nomes, numPessoa, nomePessoa, idPessoa);
+            insereGrafo(grafo, nomePessoa, "\0");
             fseek(arqPessoa, 19, SEEK_CUR);
             numPessoa++;
         }
 
-        imprimeGrafo(&grafo_Twitter);
+        int idSegue;
+        int idSeguido;
+        char nomeSegue[40];
+        char nomeSeguido[40];
 
-        liberaGrafo(&grafo_Twitter);
-        free(grafo_Twitter);
+        fseek(arqSegue, 32, SEEK_SET);
+
+        while(fread(&status, 1, 1, arqSegue) == 1){
+            if(status == '0'){
+                fseek(arqPessoa, 31, SEEK_CUR); // pula para o proximo registro
+                continue;
+            }
+            fread(&idSegue, 4,1,arqSegue);
+            fread(&idSeguido, 4,1,arqSegue);
+            getNome(nomes, idSegue, nomeSegue);
+            getNome(nomes, idSeguido, nomeSeguido);
+            insereGrafo(grafo, nomeSegue, nomeSeguido);
+            fseek(arqSegue, 23, SEEK_CUR);
+        }
+        imprimeGrafoListaAdjacencia(grafo);
+
+        limpaGrafo(grafo);
 
         fclose(arqSegue);
         fclose(arqPessoa);

@@ -21,12 +21,17 @@
 },
 {
   "directory": "/home/logranela/ED3/TrabalhoEDIII-3/build",
-  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/grafos.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/grafos.c",
-  "file": "/home/logranela/ED3/TrabalhoEDIII-3/grafos.c"
+  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/utilizadas.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/utilizadas.c",
+  "file": "/home/logranela/ED3/TrabalhoEDIII-3/utilizadas.c"
 },
 {
   "directory": "/home/logranela/ED3/TrabalhoEDIII-3/build",
-  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/utilizadas.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/utilizadas.c",
-  "file": "/home/logranela/ED3/TrabalhoEDIII-3/utilizadas.c"
+  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/listaNomes.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/listaNomes.c",
+  "file": "/home/logranela/ED3/TrabalhoEDIII-3/listaNomes.c"
+},
+{
+  "directory": "/home/logranela/ED3/TrabalhoEDIII-3/build",
+  "command": "/bin/c99-gcc   -g   -o CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o   -c /home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.c",
+  "file": "/home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.c"
 }
 ]

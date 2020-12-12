@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/logranela/ED3/TrabalhoEDIII-3/grafos.c
-grafos.h
-/home/logranela/ED3/TrabalhoEDIII-3/grafos.h
+/home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.c
+grafoListaAdjacencia.h
+/home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.h
 stdio.h
 -
 stdlib.h
@@ -16,5 +16,5 @@ stdlib.h
 string.h
 -
 
-/home/logranela/ED3/TrabalhoEDIII-3/grafos.h
+/home/logranela/ED3/TrabalhoEDIII-3/grafoListaAdjacencia.h
 

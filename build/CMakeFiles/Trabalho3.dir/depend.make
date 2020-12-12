@@ -3,10 +3,14 @@
 
 CMakeFiles/Trabalho3.dir/fornecido.c.o: ../fornecido.c
 
-CMakeFiles/Trabalho3.dir/grafos.c.o: ../grafos.c
-CMakeFiles/Trabalho3.dir/grafos.c.o: ../grafos.h
+CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o: ../grafoListaAdjacencia.c
+CMakeFiles/Trabalho3.dir/grafoListaAdjacencia.c.o: ../grafoListaAdjacencia.h
 
-CMakeFiles/Trabalho3.dir/main.c.o: ../grafos.h
+CMakeFiles/Trabalho3.dir/listaNomes.c.o: ../listaNomes.c
+CMakeFiles/Trabalho3.dir/listaNomes.c.o: ../listaNomes.h
+
+CMakeFiles/Trabalho3.dir/main.c.o: ../grafoListaAdjacencia.h
+CMakeFiles/Trabalho3.dir/main.c.o: ../listaNomes.h
 CMakeFiles/Trabalho3.dir/main.c.o: ../main.c
 CMakeFiles/Trabalho3.dir/main.c.o: ../utilizadas.h
 
