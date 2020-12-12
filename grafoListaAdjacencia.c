@@ -118,6 +118,76 @@ void insereSeguidoresLista(seguidos* lista, char nomePessoaSeguida[40]){
     }
 }
 
+
+void buscaEmProfundidade(segue* li_segue, ListaNomes* li_Nomes, char nomeVerticeInic[40]){
+    /*
+    STACK *p;
+    p = S_New(40 * sizeof(char));
+
+    ListaNomes li;
+    li = *li_Nomes;
+
+    elem* no_segue;
+    no_segue = *li_segue;
+
+    while ( no_segue->prox != NULL || strcmp(no_segue->nomeSegue, nomeVerticeInic) == 0) {
+        no_segue = no_segue->prox;
+    }
+
+    //se nao tiver o vertice é pra printar erro e retornar pra main
+    if(strcmp(no_segue->nomeSegue, nomeVerticeInic) != 0){
+        printf("Falha na execução da funcionalidade.\n");
+        S_Destroy(p);
+        return;
+    }
+
+    S_Push(no_segue->nomeSegue, p);
+
+    seguidos* li_seguidos;
+    elemSeguidos* no_seguidos;
+
+    while( (S_Size(p) != 1 && strcmp(no_segue->nomeSegue, nomeVerticeInic) != 0) || (S_Size(p) == 0)){
+        li_seguidos = no_segue->listaAdjacencia;
+        no_seguidos = *li_seguidos;
+
+        while(getStatusPeloNome(li, no_seguidos->nomeSeguidos) != 0 || no_seguidos->prox != NULL){
+            no_seguidos = no_seguidos->prox;
+        }
+        
+        elem* aux;
+        aux = *li_segue;
+
+        if(getStatusPeloNome(li, no_seguidos->nomeSeguidos) == 0){
+            while(strcmp(aux->nomeSegue, no_seguidos->nomeSeguidos) == 0)
+                aux = aux->prox;
+
+            mudaStatusPeloNome(li, no_segue->nomeSegue, 1);
+            S_Push(aux->nomeSegue, p);
+            no_segue = aux;
+            continue;
+        }
+
+        char nomeASerBuscado[40];
+        while(S_Size(p) != 0) {
+            S_Pop(nomeASerBuscado, p);
+
+            if(getStatusPeloNome(li, nomeASerBuscado) == 1){
+                while(strcmp(aux->nomeSegue, nomeASerBuscado) == 0)
+                    aux = aux->prox;
+                
+                mudaStatusPeloNome(li, aux->nomeSegue, 2);
+                no_segue = aux;
+            }
+        }
+    }
+
+    if(S_Size(p) == 0)
+        printf("A FOFOCA NAO RETORNOU\n");
+    else
+        printf("%ld\n", S_Size(p));
+    */
+}
+
 //da free no grafo todo
 void limpaGrafo(segue* li){
     if (li != NULL) {
