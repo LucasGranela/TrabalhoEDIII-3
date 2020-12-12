@@ -264,3 +264,25 @@ void imprimeGrafoListaAdjacencia(segue* lista){
         no = no->prox;
     }
 }
+
+void transpoeGrafo(segue* grafo,segue* grafoT){
+    elem* noG = *grafo;
+
+    if (grafo == NULL)
+        return;
+
+    while (noG != NULL) {
+        insereGrafo(grafoT, noG->nomeSegue, "\0");
+        noG = noG->prox;
+    }
+
+    noG = *grafo;
+    while (noG != NULL) {
+        elemSeguidos* noG_seguido = *(noG->listaAdjacencia);
+        while(noG_seguido != NULL) {
+            insereGrafo(grafoT, noG_seguido->nomeSeguidos , noG->nomeSegue);
+            noG_seguido = noG_seguido->prox;
+        }
+        noG = noG->prox;
+    }
+}

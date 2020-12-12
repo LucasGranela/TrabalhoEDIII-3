@@ -33,5 +33,6 @@ void limpaGrafo(segue* lista);
 void buscaEmProfundidade(segue* li_segue, ListaNomes* li_Nomes, char nomeVerticeInic[40]);
 
 void insereSeguidoresLista(seguidos* lista, char nomePessoaSeguida[40]);
+void transpoeGrafo(segue* grafo,segue* grafoT);
 
 #endif
